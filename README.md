@@ -16,3 +16,8 @@ The model approximates data well but it probably overfits tha data
 
 ## Summary Statistics on Suspension Coils
 
+The variance of the suspension coils for all lots in total seems large but it meets the design specification: it does not exceed 100 pounds per square inch.
+![](./analysis/total_summary.png)
+
+When we have looked into individual lots it turned out, that Lot1 is ideal, Lot2 is good, and Lot3 is bad and should be recalled.
+![](./analysis/lot_summary.png)
