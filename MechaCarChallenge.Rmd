@@ -1,0 +1,48 @@
+---
+title: "MechaCarChallenge"
+output: html_notebook
+---
+
+```{r}
+library(dplyr)
+```
+
+Deliverable 1
+
+```{r}
+MechaCar_mpg <- read.csv('MechaCar_mpg.csv',check.names = F,stringsAsFactors = F)
+```
+
+```{r}
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_mpg)
+```
+
+```{r}
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, data=MechaCar_mpg))
+```
+
+Deliverable 2
+
+```{r}
+Suspension_Coil <- read.csv('Suspension_Coil.csv',check.names = F,stringsAsFactors = F)
+```
+
+```{r}
+total_summary <- Suspension_Coil %>% 
+  summarize(Mean = mean(PSI),
+            Median = median(PSI),
+            Variance = var(PSI),
+            SD = sd(PSI))
+total_summary
+```
+
+```{r}
+lot_summary <- Suspension_Coil %>% 
+  group_by(Manufacturing_Lot) %>% 
+  summarize(Mean = mean(PSI),
+            Median = median(PSI),
+            Variance = var(PSI),
+            SD = sd(PSI))
+lot_summary
+```
+
