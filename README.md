@@ -21,3 +21,18 @@ The variance of the suspension coils for all lots in total seems large but it me
 
 When we have looked into individual lots it turned out, that Lot1 is ideal, Lot2 is good, and Lot3 is bad and should be recalled.
 ![](./analysis/lot_summary.png)
+
+## T-Tests on Suspension Coils
+
+PSI across all lots may be called statistically different from the population mean 1500 as p-value is less than 0.05.
+![](./analysis/t_t_total.png)
+
+PSI for lot1 *is not* statistically different from the population mean 1500 as p-value is maximum.
+![](./analysis/t_t_lot1.png)
+
+PSI for lot2 is not statistically different from the population mean 1500  as p-value is large.
+![](./analysis/t_t_lot2.png)
+
+PSI for lot3 is definitely statistically different from the population mean 1500  as p-value is less than 0.05.
+![](./analysis/t_t_lot3.png)
+

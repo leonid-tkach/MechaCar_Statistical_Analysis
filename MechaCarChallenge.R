@@ -25,3 +25,7 @@ lot_summary <- Suspension_Coil %>%
             SD = sd(PSI))
 lot_summary
 
+# Deliverable 3
+
+Suspension_Coil$PSI %>% t.test(mu = 1500)
+
