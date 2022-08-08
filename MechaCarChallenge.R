@@ -29,3 +29,17 @@ lot_summary
 
 Suspension_Coil$PSI %>% t.test(mu = 1500)
 
+Suspension_Coil %>% 
+  filter(Manufacturing_Lot == "Lot1") %>% 
+  .$PSI %>% 
+  t.test(mu = 1500)
+
+Suspension_Coil %>% 
+  filter(Manufacturing_Lot == "Lot2") %>% 
+  .$PSI %>% 
+  t.test(mu = 1500)
+
+Suspension_Coil %>% 
+  filter(Manufacturing_Lot == "Lot3") %>% 
+  .$PSI %>% 
+  t.test(mu = 1500)

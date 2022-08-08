@@ -72,4 +72,3 @@ Suspension_Coil %>%
   .$PSI %>% 
   t.test(mu = 1500)
 ```
-
